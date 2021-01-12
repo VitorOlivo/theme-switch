@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+.light {
+    --btn-text-clr: black;
+    --btn-bg-clr: white;
+    background-color: white;
+}
+
+.dark {
+    --btn-text-clr: white;
+    --btn-bg-clr: purple;
+    background-color: rgb(40,40,40);
+}
+
+h1, h2 {
+    color: var(--btn-text-clr);
+}
+
+.buttons {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    margin: 2% 0;
+    button {
+        width: calc(40%);
+        height: 48px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 30px;
+        margin: 2%;
+        color: var(--btn-text-clr);
+        background-color: var(--btn-bg-clr);
+        cursor: pointer;
+        transition: all ease-in-out 0.5s;
+        border: 1px solid black;
+        box-shadow: 0 0 8px 0 #dfe5f5;
+    }
+}
