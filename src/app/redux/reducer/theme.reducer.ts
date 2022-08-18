@@ -3,7 +3,7 @@ import {
     ThemeActionsUnion
   } from '../actions/theme.actions';
   
-  const initialState = 'SNT';
+  const initialState = 'Light';
   
   export function reducer(state = initialState, action: ThemeActionsUnion) {
     switch (action.type) {
