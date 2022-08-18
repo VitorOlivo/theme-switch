@@ -10,13 +10,13 @@ export class ThemeEffects {
     private actions$: Actions,
   ) {}
 
-  
+
   public changeTheme$ = createEffect(() =>
     this.actions$.pipe(
       ofType<actions.ChangeTheme>(actions.ThemeActionTypes.ChangeTheme),
       switchMap((action) => {
         
-        return [];
+        return [new actions.ChangeThemeSuccess('')];
       })
     )
   );
